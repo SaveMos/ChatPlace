@@ -1,0 +1,408 @@
+
+.main_div {
+    border: 1px solid black;  
+    overflow-x: auto;
+    overflow-y: scroll;
+    position: fixed;    
+}
+
+
+.upper_button{
+    height: fit-content;
+    width : 20vh;
+    font-size: 2.6vh;
+    vertical-align: middle;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    display: inline;
+    cursor: pointer;
+}
+#option_container{
+    display: block;
+    width: fit-content;
+    height:auto;
+    float:right;
+    margin-right: 10vh;
+    margin-top: 1.2vh;
+}
+#logged_user_console{
+    height: 50vh;
+    width:20.5vw;
+    
+    left:0;
+    top:0;
+    position: absolute;
+   
+}
+#logged_user_information_container{
+    
+    height: fit-content;
+     
+}
+
+#logout_form{
+    display: inline-block;  
+}
+#logout_button{  
+    text-align: center;
+
+    height: 9vh;
+    width: 16vh;
+
+    margin-left: 9vh;
+    margin-top: 3vh;
+
+    font-size: 3vh;
+    
+    cursor: pointer;
+
+        
+    position: relative;
+   
+    left: 50%;
+    
+    transform: translate(-50%, 0%);
+    
+}
+#current_logged_display{
+    font-size: 4.7vh;
+
+    padding-left:3%;
+
+}
+
+#contact_searcher_container{
+    position: absolute;
+    margin: 2.5vh 0vh 0vh 0vh;
+    width: 50vh;
+   
+}
+#contact_searcher_input{
+    width:19vw;
+    display: block;
+}
+#suggested_contact_list_container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid black;
+
+    width:19.7vw;
+    height:24vh;
+}
+
+@-moz-document url-prefix(){ /*Accorgimento per firefox*/
+    #suggested_contact_list_container{
+        width:19.5vw;  
+    }
+}
+.suggested_contact_list_element{
+     border-bottom: 1px dotted black;
+     height: 10vh;
+     
+     
+}
+
+
+.bottone_gestione_gruppo{
+    font-size: 3vh;
+    width:4.6vh;
+    height:4.3vh;
+    text-align: center;
+
+    margin-left: 5.3%;
+    padding-bottom: 2vh;
+    z-index: 1;
+    cursor: pointer;
+
+}
+.suggested_contact_list_element_span{
+    width: auto;
+    font-size: 140%;
+    padding-left:5.3%;
+    padding-bottom: 1%;
+    height: fit-content;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+#contact_list{
+    overflow-y: scroll; 
+    left : 0;
+    top : 45%;
+    width:19.5vw;
+    height: 55vh;
+}
+.contact_list_element_white{  
+    background-color: white;
+    word-wrap: break-word;
+    color:black;
+    padding-left:5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px dotted black;
+    cursor: pointer; 
+}
+.contact_list_element_white:hover{
+    background-color: gainsboro;
+}
+
+.contact_list_element_black{  
+    background-color: #6F7073;
+    word-wrap: break-word;
+    color : gainsboro;
+    padding-left:5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px dotted gainsboro;
+    cursor: pointer; 
+}
+.contact_list_element_black:hover{
+    background-color: #4A4B4C;
+}
+.contact_list_element_nome{
+    font-size:140%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact_list_element_attivita{
+    font-size:90%;;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+}
+#chat_monitor{
+    right : 0vh;
+    top: 13.5vh;
+
+    height: 63vh;
+    width:80.2vw;
+
+}
+
+@-moz-document url-prefix(){ /*Accorgimento per firefox*/
+    #chat_monitor{
+        width:80.4vw;  
+    }
+}
+
+.messaggio_chat{
+    width : 80%;
+    font-size: 3vh;
+    word-wrap: break-word;
+    padding : 0%  3%  0%  1%;
+    height: fit-content;
+    margin  : 4%  0%  1%  2%;
+}
+
+
+.visualizzato_dot{
+    
+    border-radius: 25px;
+}
+.log_messaggio_chat{
+    width : 90%;
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding : 2%  3%  2%  1%;
+    margin-left: 2%;
+}
+
+.messaggio_file{
+    display: block;
+}
+
+.mess_file_element_name{
+    display:inline;
+    margin-right: 1%;
+}
+
+.mess_file_element_download{
+    display:inline;
+    margin-right: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.mess_file_element_name:hover{
+    color:goldenrod;   
+}
+.mess_file_element_download:hover{
+    color:goldenrod;  
+}
+.mess_file_element_name:visited{
+    color:chocolate;   
+}
+.mess_file_element_download:visited{
+    color:chocolate; 
+}
+.mess_file_element_name:visited:hover{
+    color:lightcoral;  
+}
+.mess_file_element_download:visited:hover{
+    color:lightcoral;  
+}
+
+#current_chat_info_container{
+    position: fixed;
+
+    border: 1px solid #4A4B4C;
+
+    right : 0;
+    top : 0;
+
+    width:80.2vw;
+    height: 14.4vh;
+    z-index: 1;
+}
+
+
+@-moz-document url-prefix(){ /*Accorgimento per firefox*/
+    #current_chat_info_container{
+        width:80.45vw;  
+    }
+}
+
+#current_contact_name{
+    font-size: 2.0vw;
+
+    width :40vw;
+
+    position: absolute;
+    word-wrap: break-word;
+    top: 3.8vh;
+    left: 4vh;
+    overflow-y: hidden;
+}
+
+#message_box_container{
+    position: fixed;
+
+    border: 1px solid #4A4B4C;
+
+    right : 0;
+    top : 76%;
+
+    width:80.2vw;
+    height: 25%;
+
+    text-align:left;
+
+    overflow-x: visible;   
+}
+
+@-moz-document url-prefix(){ /*Accorgimento per firefox*/
+    #message_box_container{
+        width:80.5vw;  
+    }
+}
+
+#message_box{
+    border-radius: 25px;
+
+    width: 65vw;
+   
+    height: 8vh;
+
+    font-size: 3vh;
+    padding-left: 10px;
+    margin : 4vh 0px 0px 2%;
+   
+    position:absolute;
+}
+
+#send_button{
+    height: 8vh;
+    width: 6vw;
+
+    text-align: center;
+    right : 0;
+    position:absolute;
+    margin : 4vh 7vh 0px 2%;
+
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+#file_selector_label{
+    
+    width : 14.7vh; 
+
+    z-index: 0;
+
+    position: absolute;
+    top: 16.4vh;
+    left:2%;
+
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: fit-content;
+    text-align: center;
+    cursor: pointer;
+}
+#file_send{
+    height: fit-content;
+    width : 15.7vh; 
+
+    position:absolute;
+    overflow-x: hidden;
+
+    opacity: 0; /*Il campo input effettivo è invisibile*/
+
+    
+    text-align: center;
+    z-index: -1;
+    margin : 16vh 1vh 0px 2%;
+
+    font-size: 3vh;
+   
+}
+
+
+#file_list_label{
+    font-size: 3vh;
+
+    height: fit-content;
+    position:absolute;
+   
+    width : 16vh; 
+    margin : 16.5vh 1vh 0px 20vh;
+}
+#file_list{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 3vh;
+
+    height: fit-content;
+    position: absolute;
+    overflow-x: visible;
+
+    margin : 16.8vh 1vh 0px 27vh;
+}
+
+
+#message_form{
+    height : 5%;
+    font-size: 3vh;
+}
+
+/*Parte relativa alle Scrollbars
+
+per firefox non ho trovato il modo di personalizzare le scroll bars
+
+*/
+::-webkit-scrollbar{
+    width:0.8vw;
+    background-color: #ADAFB2;
+}
+::-webkit-scrollbar-thumb{
+    width:1.7vw;
+    background-color: #4A4B4C;
+}
+::-webkit-scrollbar-thumb:hover{
+    width:1.7vw;
+    background-color: #2f2f30;
+}
+
+
